@@ -1,0 +1,1 @@
+for z in {0..5}; do echo $z;for x in `seq $((2 ** z))`; do echo $z/$((x-1));for y in `seq $((2 ** z))`; do echo $z/$((x-1))/$((y-1)).pbf; curl https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Clearmap_Webplain/VectorTileServer/tile/$z/$((y-1))/$((x-1)).pbf --output 0_dl/$z/$((x-1))/$((y-1)).pbf;done;done;done

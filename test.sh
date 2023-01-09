@@ -1,1 +1,0 @@
-rm -rf 0_dl; mkdir 0_dl;for z in {0..6}; do mkdir 0_dl/${z};for x in `seq $((2 ** z))`; do mkdir 0_dl/${z}/$((x-1));for y in `seq $((2 ** z))`; do mkdir 0_dl/${z}/$((x-1))/$((y-1)); done;done;done

@@ -1,0 +1,1 @@
+find ./0_dl -type f -size 590c | xargs rm
